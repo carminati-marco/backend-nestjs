@@ -1,6 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-
 @Entity()
 export class Item {
   @PrimaryGeneratedColumn()
@@ -9,21 +8,19 @@ export class Item {
   @Column()
   object: string;
 
-  @Column()
+  @Column({ nullable: true })
   picture: string;
 
-  @Column()
+  @Column({ nullable: true })
   link: string;
 
   // type
   @Column()
   description: string;
 
-  @Column()
+  @Column({ default: 0 })
   price: number;
 
   @Column({ default: 0 })
   discount: number;
-
-  // Stanza	Oggetto	Foto	Tipo	Descrizione	Prezzo	Sconto	Prezzo scontato	Quantità	Totale	Marca	Link
 }

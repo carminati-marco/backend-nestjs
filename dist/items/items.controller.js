@@ -22,6 +22,7 @@ let ItemsController = class ItemsController {
         this.itemsService = itemsService;
     }
     create(createItemDto) {
+        console.log("d", createItemDto);
         return this.itemsService.create(createItemDto);
     }
     findAll() {

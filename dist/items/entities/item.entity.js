@@ -22,11 +22,11 @@ __decorate([
     __metadata("design:type", String)
 ], Item.prototype, "object", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
+    (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
 ], Item.prototype, "picture", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
+    (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
 ], Item.prototype, "link", void 0);
 __decorate([
@@ -34,7 +34,7 @@ __decorate([
     __metadata("design:type", String)
 ], Item.prototype, "description", void 0);
 __decorate([
-    (0, typeorm_1.Column)(),
+    (0, typeorm_1.Column)({ default: 0 }),
     __metadata("design:type", Number)
 ], Item.prototype, "price", void 0);
 __decorate([
